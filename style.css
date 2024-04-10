@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: azure; 
+    /* width: 100%; */
+}
+.container-main{
+    
+    height: 98vh;
+    background-color:aliceblue;
+
+}
+nav{
+    /* position: absolute; */
+    height: 40px;
+    width: 100%;
+    background-color: black;
+}
+ul{
+    display: flex;
+    float: right;
+    padding: 1px;
+}
+li{
+    list-style: none;
+    padding: 9px  ;
+}
+li a{
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+    font-size: small;
+}
+main{
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+   
+}
+.name{
+    margin-top: 20%;
+    text-align: center;
+    align-items: center;
+}
+.name h1,h2{
+    color: rgb(36, 34, 34);
+}
+
+.product h3{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border: #000 solid 3px;
+    filter: drop-shadow(7px 7px 15px);
+}
+.first-container,.second-container{
+    display: flex;
+    padding: 14px;
+}
+/* box1.box2.box3.box4  */
+.first-container card{
+   border: 1px solid black;
+   border-radius:3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    filter: drop-shadow(8px 9px 19x);
+    box-sizing: border-box;
+
+}
+
+
+.card {
+    /* position: relative; */
+    width: 11.875em;
+    height: 16.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    /* padding: 0.5em; */
+    /* padding-bottom: 3.4em; */
+  }
+  
+  .card::after {
+    content: "Purchase now";
+     /* margin-bottom: 3px; */
+     /* text-align: center; */
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    /* position: absolute; */
+    left: 0;
+    bottom: -60px;
+    background: #00AC7C;
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  .card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    /* position: absolute; */
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    /* position: absolute; */
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .card:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+  }
+  
+  .card:active::after {
+    content: "Added !";
+    height: 3.125em;
+  }
+  
+  .text {
+    max-width: 55px;
+  }
+/*   
+  .image {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+   */
+   .button  {
+    position: relative;
+    overflow: hidden;
+    margin-left: 40%;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    border: none;
+    cursor: pointer;
+  }
+  .button a{
+      color: #fff;
+      text-decoration: none;  
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  
